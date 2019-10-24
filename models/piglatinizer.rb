@@ -5,7 +5,6 @@ class PigLatinizer
   def piglatinize(user_phrase)
     word_array = user_phrase.split(" ").collect do |word|
       word_letters = word.split("")
-      #leading_consonants = ""
       if word.start_with?(/[aeiouAEIOU]/)
         word += "way"
       else
